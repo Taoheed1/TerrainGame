@@ -15,8 +15,12 @@ public class Map {
 		
 		//eastWest.add(Locations);
 		
-		ArrayList<Locations>eastWest = new ArrayList<Locations>();
-		eastWest.add().math.random();
+		//ArrayList<Locations>eastWest = new ArrayList<Locations>();
+		public void placeThings() {
+			
+			int xPosition = Math.random(1:10);
+
+		}
 		
 		//could also do this by finding the array element that they are currently at and finding the abs between the two
 		
@@ -43,11 +47,7 @@ public class Map {
 	}
 		
 	
-	//map.randomPosition(eastWest)
-	public void randomPosition(Array[] eastWest, Array[] northSouth) {
-		// TODO Auto-generated method stub
-		
-	}
+
 	public void story() {
 		String background = "You're lost in a swamp.......";
 	}
@@ -55,18 +55,24 @@ public class Map {
 	public void userInput() {
 		
 		Scanner sc = new Scanner(System.in);
-		String input =sc.next("Select whether to go north, south, east or west");
-		if (input == "north") {
-			
+		System.out.println("Select whether to go north, south, east or west");
+		String input =sc.next();
+		
+		while (!Goal.getFound()) {
+			if (input == "north") {
+				
+			}
+			else if (input == "south") {
+				
+			}
+			else if(input== "east") {
+				
+			}
+			System.out.println(input);
 		}
-		else if (input == "south") {
-			
-		}
-		else if(input== "east") {
-			
-		}
-		System.out.println(input);
+	
 		
 	}
+	
 
 }
